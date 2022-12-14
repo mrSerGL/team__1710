@@ -1,0 +1,35 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 1.76;
+/* or 21px */
+
+letter-spacing: 0.04em;
+
+background-color: #817C7C;
+}
+
+.container {
+    width: 100%;
+    padding-left: 28px;
+    padding-right: 28px;
+    margin-left: auto;
+    margin-right: auto;   
+}
+
+// section {
+//     padding: 0;
+// }
+

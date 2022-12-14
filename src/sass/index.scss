@@ -1,3 +1,18 @@
+// Base styles
+@import './base/base';
+@import './base/reset';
+@import './base/typography';
+
+// Utils styles
+@import './utils/animations';
+@import './utils/decimals';
+@import './utils/mixins';
+@import './utils/placeholders';
+@import './utils/v-hidden';
+@import './utils/variables';
+
+
+// Components styles
 @import './common';
 @import './example';
 @import './header';
