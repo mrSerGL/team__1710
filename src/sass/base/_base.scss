@@ -18,11 +18,11 @@ body {
 
   letter-spacing: 0.04em;
 
-  background-color: #817c7c;
+  background-color: var(--body-color);
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
   // padding-left: 28px;
   // padding-right: 28px;
   margin-left: auto;
@@ -30,7 +30,7 @@ body {
 }
 
 section {
-  background-color: #84a278;
+  background-color: var(--section-color1);
 
   //   padding-top: 60px;
   //   padding-bottom: 60px;
