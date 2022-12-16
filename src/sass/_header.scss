@@ -1,7 +1,17 @@
 .header-nav__logo{
-    background-color: rgba(248, 210, 78, 1);
+
    
-    margin-top: 8px;
+    margin-top: 12px;
+    @media screen and (min-width: 768px) {
+        margin-top: 20px;
+        width: 48px;
+        height: 44px;
+    }
+    @media screen and (min-width: 1200px){
+        margin-top: 8px;
+        width: 60px;
+        height: 65px;
+    }
 }
 
 
@@ -58,6 +68,9 @@ color: rgba(248, 210, 78, 1);
 }
 
 .buttons-header__main{
+display: flex;
+align-items: center;
+
 font-family: Montserrat;
 font-size: 14px;
 font-weight: 600;
@@ -75,21 +88,49 @@ border-color: transparent;
        
         
     }
-    @media screen and(min-width: 1200px){
-        margin-top: 28px;
-    }
+    // @media screen and(min-width: 1200px){
+    //     margin-top: 28px;
+    // }
 
 }
+
+.button-svg{
+    margin-left: 4px;
+}
 .buttons-header__menu{
+    background-color: transparent;
+    border-color: transparent;
+    margin-right: 32px;
+    fill: rgba(255, 255, 255, 1);
+   
 
      
-    @media screen and(min-width: 768px) {
-        margin-right: 36px;
-        
+    @media screen and(max-width: 767.98px) {
+       
+       margin-right: auto
+        // position: absolute;
+        // top: 29px;
+        // right: 188px;
+
     }
     @media screen and(min-width: 1200px){
         display: none;
 
     }
     
+}
+
+.buttons-header{
+    display: flex;
+
+    @media screen and(max-width: 767.98px) {
+        margin-top: 17px;
+    }
+    @media screen and(min-width: 768px){
+        margin-top: 24px;
+    }
+    @media screen and(min-width: 1200px){
+        margin-top: 28px;
+        margin-bottom: auto;
+    }
 }
