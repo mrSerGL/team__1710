@@ -1,21 +1,36 @@
-// .open-toggle {
-//   min-height: 40px;
-//   min-width: 40px;
-//   margin-left: auto;
-//   background-color: transparent;
-// }
-// // @media (min-width: 1200px) {
-// //   .open-toggle {
-// //     display: none;
-// //   }
-// // }
+.open-toggle {
+  min-height: 40px;
+  min-width: 40px;
+  margin-left: auto;
+  background-color: transparent;
+}
+@media (min-width: 1200px) {
+  .open-toggle {
+    display: none;
+  }
+}
 .logo {
+  position: absolute;
+  top: 12px;
+  left: 20px;
   width: 40px;
   height: 40px;
   margin-left: auto;
+  display: block;
 }
-.menu-icons {
-  display: flex;
+.close-toggle {
+  position: absolute;
+  top: 12px;
+  right: 20px;
+  display: block;
+  min-height: 32px;
+  min-width: 32px;
+  background-color: transparent;
+  fill: #fcfcfc;
+  border: none;
+  //   &:hover,
+  //   &:focus {
+  //   }
 }
 .menu-container {
   display: flex;
@@ -24,40 +39,26 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 100vh;
-  padding: 0 20px;
+  width: 100%;
+  height: 100%;
   background-color: #85a279;
-  z-index: 999;
+  z-index: 20;
+  opacity: 0;
+  transform: translateX(100%);
 }
 
-//   //   opacity: 0;
-//   transform: translateX(100%);
-// }
-
-// // .menu-container.is-open {
-// //   transform: translateX(0);
-
-// //   opacity: 1;
-// // }
-
-.close-toggle {
-  min-height: 32px;
-  min-width: 32px;
-  background-color: transparent;
-  fill: #fcfcfc;
-  border: none;
-  //   &:hover,
-  //   &:focus {
-  //     fill: $accent-color;
-  //   }
+.menu-container.is-open {
+  transform: translateX(0);
+  opacity: 1;
 }
 
 .mobile-menu {
-  padding: 0;
   margin-bottom: auto;
   overflow: hidden;
-  overflow: scroll;
+  margin-top: 100px;
+  @media screen and (min-width: 768px) {
+    margin-top: 140px;
+  }
 }
 
 .menu__link {
@@ -73,9 +74,16 @@
   text-align: center;
   &:not(:last-child) {
     margin-bottom: 32px;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 40px;
+    }
   }
 }
 .menu__button {
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+  display: block;
   font-weight: 600;
   font-size: 14px;
   line-height: 1.2;
