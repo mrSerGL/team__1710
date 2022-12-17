@@ -18,32 +18,32 @@
   background-position: center;
 
   // mobile
-  background-image: url(../images/cow-min.png);
+  background-image: url(../images/background/backgroud_mobile.svg);
   // mobile retina
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: url(../images/cowx2-min.png);
+    background-image: url();
   }
 
   // tablet
   @media screen and (min-width: 481px) {
-    background-image: url(../images/cowtab-min.png);
+    background-image: url(../images/background/background_tablet.svg);
     // tablet retina
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(../images/cowtabx2-min.png);
+      background-image: url();
     }
 
     // desktop
     @media screen and (min-width: 769px) {
-      background-image: url(../images/cowDesk-min.png);
+      background-image: url(../images/background/backgroud_desktop.svg);
       // tablet retina
       @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
-        background-image: url(../images/cowDeskx2-min.png);
+        background-image: url();
       }
     }
   }
