@@ -1,26 +1,19 @@
 .section-contacts {
     min-width: 320px;
-    margin: 40px 0 60px;
+    padding: 40px 0 60px;
 
-    // background-color: #84A178;
+    background-image: linear-gradient(transparent 400px, #84A178 400px), url(../images/background/Backgroud_mobile-min.png);
+    
+
+    @media screen and (min-width: 768px) {
+            background-image: linear-gradient(transparent 345px, #84A178 345px), url(../images/background/Background_tablet-min.png);
+        }
+    
+    @media screen and (min-width: 1200px) {
+            background-image: linear-gradient(transparent 170px, #84A178 170px), url(../images/background/Backgroud_desktop-min.png);
+        }
+
 }
-
-// .container {
-//     width: 100%;
-//     margin: 0 auto;
-//     padding: 0 20px;
-
-//     @media screen and (min-width: 768px) {
-//         width: 768px;
-//         padding: 0 32px;
-//     }
-
-//     @media screen and (min-width: 1200px) {
-//         width: 1200px;
-//         padding: 0 16px;
-//     }
-
-// }
 
 .section-contacts__item {
     margin-bottom: 20px;
@@ -262,6 +255,7 @@
     background-color: #F8D24E;
     border-radius: 10px;
     border-color: transparent;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover {
         border: 2px solid #F8D24E;
