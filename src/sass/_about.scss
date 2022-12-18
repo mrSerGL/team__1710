@@ -163,17 +163,36 @@ line-height: 1.35;
     left: 0px;
     top: 22px;
         border-radius: 148px;
+//         background:  url('../images/about/cow-min.png');
+//         @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2),
+//   (min-resolution: 192dpi),
+//   (min-resolution: 2dppx) {
+//          background-image: url("../images/about/cowx2-min.png");
+//         }
 @media screen and (min-width: 768px) {
       width: 330px;
        height: 330px;
        top: 26px;
        border-radius: 1228px;
+    //    background:  url('../images/about/cowtab-min.png');
+    //    @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2),
+    //    (min-resolution: 192dpi),
+    //    (min-resolution: 2dppx) {
+    //     background-image: url("../images/about/cowtabx2-min.png");
+    //    }
     }
 @media screen and (min-width: 1200px) {
    width: 490px;
 height: 490px;
 top: 39px;        
 border-radius: 1852.2px;
+// background:  url('../images/about/cowdesk-min.png');
+// @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2),
+// (min-resolution: 192dpi),
+// (min-resolution: 2dppx) {
+//     background-image: url("../images/about/cowdeskx2-min.png");
+
+// }
 }
 }
 .about__overlay {
@@ -184,9 +203,7 @@ border-radius: 1852.2px;
     box-shadow: 0px 4.48583px 16.8218px rgba(153, 114, 23, 0.25);
     border-radius: 140px; 
     background:  linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
-    //     @media screen and (min-device-pixel-ratio: 2),  screen and (min-resolution: 192dp1), screen and (min-resolution: 2dppx) {
-    //     background-image:  linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
-    // }
+           
 @media screen and (min-width: 768px) { 
 width: 330px;
 height: 330px;
