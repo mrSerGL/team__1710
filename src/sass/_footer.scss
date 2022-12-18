@@ -127,11 +127,48 @@
     fill: currentColor;}
 
     .footer__contacts{display: flex;
-        flex-direction:row-reverse
+        flex-direction:row-reverse;
+      
 
     }
-    .footer__contacts-list{
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
+   
+    .footer__contacts-tel{
+        text-decoration: none;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 1.86;
+        text-align: right;
+        
+        color: #FFFFFF;
+        margin-bottom: 60px;
+        @media screen and (min-width:768px){font-size: 14px;
 
+        }
+        @media screen and (min-width:1200x){font-size: 16px;
+
+        }
+      
+    }
+.footer__contacts-title{color: #131313;
+    text-decoration: none;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 1.86;
+        text-align: right;
+        
+      
+        @media screen and (min-width:768px){font-size: 14px;
+
+        }
+        @media screen and (min-width:1200x){font-size: 16px;
+
+        }
+
+}
+.footer__contacts-list{
+    color: #131313;
+}
