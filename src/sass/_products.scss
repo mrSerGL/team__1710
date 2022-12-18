@@ -213,6 +213,10 @@ padding-right: 10px;
     align-items: center;
     margin: 0 auto;
   }
+  .button:hover,
+  .button:focus{
+    background-color: aqua;
+  }
 
    .product-img{
      position: absolute;
