@@ -8,7 +8,13 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 20;
-  transition: 0.3s all;
+  transition: 300ms all;
+  pointer-events: none;
+}
+.modal.active,
+.overlay.active {
+  opacity: 1;
+  visibility: visible;
 }
 .modal {
   opacity: 0;
@@ -97,24 +103,19 @@
       width: 132px;
       height: 132px;
       border-radius: 50%;
+      z-index: 20;
     }
   }
-}
-.modal.active,
-.overlay.active {
-  opacity: 1;
-  visibility: visible;
 }
 .ice-cream {
   border: 2px solid #96af8c;
   box-shadow: (0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
   &::before {
     background-image: linear-gradient(
-        0deg,
-        rgba(156, 190, 143, 0.7),
-        rgba(156, 190, 143, 0.7)
-      ),
-      url(../images/svg/ellipse.svg);
+      0deg,
+      rgba(156, 190, 143, 0.7),
+      rgba(156, 190, 143, 0.7)
+    );
     background-color: #d9d9d9;
     box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
   }
@@ -205,5 +206,18 @@ textarea {
   margin-top: 26px;
   @media screen and (min-width: 768px) {
     margin-top: 32px;
+  }
+}
+.modal__item {
+  position: relative;
+}
+.modal__img {
+  position: absolute;
+  top: -65px;
+  right: 44px;
+  z-index: 40;
+  @media screen and (min-width: 768px) {
+    top: -2px;
+    right: 1.5px;
   }
 }
