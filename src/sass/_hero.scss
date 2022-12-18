@@ -1,11 +1,11 @@
 .section-hero {
-  @media screen and(max-width:767.98px) {
+  @media screen and (max-width:767.98px) {
     height: 502px;
   }
-  @media screen and(max-width:1199.98px) {
+  @media screen and (max-width:1199.98px) {
     height: 370px;
   }
-  @media screen and(min-width:1200px) {
+  @media screen and (min-width:1200px) {
     height: 600px;
   }
 }
@@ -92,7 +92,7 @@
   line-height: 1.13;
   letter-spacing: 0.04em;
 
-  @media screen and(min-width: 1200px) {
+  @media screen and (min-width: 1200px) {
     font-size: 38px;
   }
 }
@@ -105,12 +105,12 @@
 
   color: rgba(252, 252, 252, 1);
 
-  @media screen and(min-width:768px) {
+  @media screen and (min-width:768px) {
     padding-top: 12px;
     margin-bottom: 24px;
   }
 
-  @media screen and(min-width:1200px) {
+  @media screen and (min-width:1200px) {
     padding-top: 45px;
     margin-bottom: 28px;
   }
@@ -129,7 +129,7 @@
   border-radius: 8px;
   border: 2px solid rgba(248, 210, 78, 1);
 
-  @media screen and(min-width:1200px) {
+  @media screen and (min-width:1200px) {
     font-size: 14px;
     line-height: 1.28;
   }
