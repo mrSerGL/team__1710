@@ -49,6 +49,9 @@
     margin: 0 auto;
     margin-bottom: 16px;
 
+    transform: scale(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
     @media screen and (min-width: 480px) {
         width: 440px;
     }
@@ -66,6 +69,11 @@
         padding: 0 40px;
     }
 
+    &:hover {
+        transform:scale(102%);
+                
+    }
+
 }
 
 .contacts-card__item:not(:first-child) {
@@ -80,7 +88,7 @@
     display: inline-block;
     padding: 4px 22px;
     line-height: 1.2;
-
+    font-weight: 500;
     letter-spacing: 0.04em;
 
     color: #131313;
@@ -102,16 +110,18 @@
 .contacts-card__city {
     line-height: 186%;
     letter-spacing: 0.04em;
-
+    font-weight: 500;
     color: #131313;
     margin-bottom: 8px;
 
     @media screen and (min-width: 768px) {
+        
         font-size: 14px;
         margin-bottom: 12px;
     }
 
     @media screen and (min-width: 1200px) {
+        font-size: 16px;
         margin-bottom: 8px;
     }
 
@@ -120,7 +130,7 @@
 .contacts-card__adress {
     line-height: 183%;
     letter-spacing: 0.04em;
-
+    font-weight: 500;
     color: #D6936D;
     margin-bottom: 24px;
 
@@ -131,7 +141,7 @@
 
     @media screen and (min-width: 1200px) {
         font-size: 16px;
-
+    
     }
 }
 
@@ -153,10 +163,11 @@
 
 .contacts-card__days {
     line-height: 186%;
-
+    font-weight: 500;
     color: #131313;
 
     @media screen and (min-width: 768px) {
+        
         font-size: 14px;
 
     }
@@ -169,8 +180,10 @@
 .contacts-card__timetable {
     line-height: 186%;
     color: #ABABAB;
+    font-weight: 500;
 
     @media screen and (min-width: 768px) {
+        
         font-size: 14px;
 
     }
@@ -183,10 +196,12 @@
 .contacts-card__phone {
     display: block;
     line-height: 160%;
+    font-weight: 500;
     color: #131313;
     margin-bottom: 6px;
 
     @media screen and (min-width: 768px) {
+        
         font-size: 14px;
         line-height: 150%;
         margin-bottom: 4px;
@@ -202,8 +217,10 @@
 .contacts-card__email {
     line-height: 160%;
     color: #131313;
+    font-weight: 500;
 
     @media screen and (min-width: 768px) {
+        
         font-size: 14px;
         line-height: 150%;
 
@@ -456,7 +473,7 @@ textarea:focus-visible {
     @media screen and (min-width: 768px) {
         width: 448px;
         font-size: 16px;
-        text-align: start;
+        letter-spacing: 0;
         margin-bottom: 32px;
     }
 
