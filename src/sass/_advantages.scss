@@ -62,23 +62,68 @@ margin-right: auto;
 } 
 }
 
-.advantages__thumb{
-display: flex;
-align-items: center;
-justify-content: center;
-width: 50px;
-height: 50px;
-margin: 0 auto;
-left: 0px;
-top: 0px;
-background: #F8D24E;
-border-radius: 25px;
+.advantages__first::before{
+  content: '';
+  display: inline-block;
+ justify-content:center;
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+  left: 0px;
+  top: 0px;
+  background: #F8D24E;
+  border-radius: 25px;
+  background-image: url(../images/advantages/scow-min.png);
+  @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/advantages/scowx2-min.png);
+    }
+  background-size: 36px 36px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
-
-.advantages__icon{
-width: 36px;
-height: 36px;
-text-align: center;
+.advantages__second::before{
+  content: '';
+  display: inline-block;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+  left: 0px;
+  top: 0px;
+  background: #F8D24E;
+  border-radius: 25px;
+  background-image: url(../images/advantages/sweight-min.png);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/advantages/sweightx2-min.png);
+    }
+  background-size: 36px 36px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.advantages__third::before{
+  content: '';
+  display: inline-block;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+  left: 0px;
+  top: 0px;
+  background: #F8D24E;
+  border-radius: 25px;
+  background-image: url(../images/advantages/sicecrema-min.png);
+  @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/advantages/sicecremax2-min.png);
+    }
+  background-size: 36px 36px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .advantages__pretitle{
