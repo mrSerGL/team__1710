@@ -1,0 +1,90 @@
+
+.menu-toggle {
+    min-height: 40px;
+    min-width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+}
+
+.icon-close {
+    fill: #131313;
+}
+
+.menu-container {
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    display: block; 
+    top: 0;
+    left: 0;
+     color: #131313;  
+    background-color: #ffffff;
+    z-index: 999;
+    transform: translateX(100%);
+    transition: transform 250ms ease-in-out;
+    width: auto;
+    height: auto;
+    padding: 28px;
+    text-align: center;
+    @media screen and (min-width: 768px) {
+        width: 568px;
+        height: auto;
+        padding: 32px 60px;
+        top: 25%;
+    left: 25%;
+}
+}
+
+.menu-container.is-open {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+}
+
+.menu-container .menu-toggle {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    color: #fff;
+}
+
+.video {
+    width: 224px;
+    height: 199px;
+    @media screen and (min-width: 768px) {
+        width: 448px;
+        height: 205px;
+        margin-bottom: 32px;
+}
+}
+
+.modal__title {
+        font-family: 'Seymour One';
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom:  20px;
+    text-transform: uppercase;
+    @media screen and (min-width: 768px) {
+        font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 32px;
+}
+}
+
+.about__text--modal {
+        font-size: 14px;
+    line-height: 1.4;
+    text-align: start;
+    @media screen and (min-width: 768px) {
+            font-size: 16px;
+}
+}
+
