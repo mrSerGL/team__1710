@@ -1,10 +1,201 @@
-.section-hero__title{
+.section-hero{
+  @media screen and(max-width:767.98px) {
+    height: 502px;
+  }
+  @media screen and(max-width:1199.98px){
+height: 370px;
+  }
+  @media screen and(min-width:1200px){
+height: 600px;
+  }
+  
+}
+
+
+.hero-container{
+  position: relative;
+  height: 100%;
+    background-position: bottom center,bottom;
+    
+    background-repeat: no-repeat;
+
+    // mobile screen
+    background-image: 
+
+    url(../images/products/ice-creammob-min.png),
+    url(../images/bg-dots/mob_dots.svg) 
+    ;
+
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/products/ice-creammobx2-min.png),
+      url(../images/bg-dots/mob_dots.svg)
+      ;
+    }
+    @media screen and (max-width:767.98px) {
+
+      background-size: 177px 217px,100% ;
+    
+
+
+    }
+
+    // tablet screen
+    @media screen and (min-width: 768px) {
+      background-image: url(../images/products/ice-creamtab-min.png),
+      url(../images/manyice-creamdesk-min.png) ,
+     url(../images/bg-dots/tab_dots.svg),
+     ;
+
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+         background-image: url(../images/products/ice-creamtabx2-min.png),
+         url(../images/bg-dots/tab_dots.svg)
+        ;
+      }
+
+      @media screen and (min-width: 768px) {
+
+        background-position:bottom right 92px,bottom 12px left 32px, bottom ;
+        background-size: 268px 329px,152px 152px,100% ;
+      }
+
+    }
+
+    // desktop screen
+    @media screen and (min-width: 1200px) {
+      background-image: url(../images/products/ice-creamdesk-min.png),
+      url(../images/manyice-creamdesk-min.png),
+       url(../images/bg-dots/desk_dots.svg); 
+
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+         background-image: url(../images/products/ice-creamdeskx2-min.png),
+        
+         url(../images/bg-dots/desk_dots.svg)
+       ;
+      }
+      @media screen and (min-width:1200px) {
+        background-position: right 92px bottom, left 16px bottom 65px,bottom ;
+
+          background-size: 456px 560px, 225px 225px ,100%,;
+        }
+      }
+
+
+
+      
+    
+    }
+
+
+
+
+
+
+
+
+.hero-title1{
     font-family: Seymour One;
-font-size: 38px;
-font-weight: 400;
-line-height: 1.26;
-letter-spacing: 0.04em;
+    font-size: 26px;
+
+    line-height: 1.26;
+    letter-spacing: 0.04em;
+}
+
+.hero-title2{
+
+
+    font-family: Seymour One;
+    font-size: 34px;
+
+    line-height: 0.97;
+
+}
+
+.hero-title3{
+
+    font-family: Titan One;
+    font-size: 37px;
+
+    line-height: 1.13;
+    letter-spacing: 0.04em;
+
+
+    @media screen and(min-width: 1200px){
+        font-size: 38px;
+    }
+}
+
+
+
+.section-hero__title{
+  padding-top: 47px;
+  padding-left: 20px;
+  padding-right: 53px;
+  margin-bottom: 32px;
+
+
+
 
 color: rgba(252, 252, 252, 1);
 
+
+@media screen and(min-width:768px) {
+padding-top: 12px;
+margin-bottom: 24px;
+
+}
+
+@media  screen and(min-width:1200px) {
+  padding-top: 45px;
+margin-bottom: 28px;
+}
+
+}
+
+.section-hero__button{
+font-family: Montserrat;
+font-size: 12px;
+font-weight: 600;
+line-height: 1.25;
+text-align: center;
+background-color: transparent;
+
+padding: 11px 26px;
+margin-right: 12px;
+border-radius: 8px;
+border: 2px solid  rgba(248, 210, 78, 1);
+
+@media screen and(min-width:1200px) {
+  font-size: 14px;
+  line-height: 1.28;
+}
+
+}
+
+.section-hero__link{
+font-family: Montserrat;
+font-size: 12px;
+font-weight: 600;
+line-height: 1.25;
+text-align: center;
+color: rgba(248, 210, 78, 1);
+
+
+
+@media screen and (min-width:1200px) {
+  font-size: 14px;
+}
+}
+
+.section-hero__text{
+  @media screen and (max-width: 767.98px){
+display: none;
+  }
+}
+
+.hero-list{
+@media screen and (max-width:767.98px) {
+  display: none;
+
+}
 }
