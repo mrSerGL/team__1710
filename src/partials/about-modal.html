@@ -1,12 +1,15 @@
  
-<div class="menu-container js-menu-container" id="mobile-menu">
-    <button class="menu-toggle js-close-menu">
+
+<!-- <div class="backdrop-about is-hidden" data-modal="about"> -->
+    <div class="about__modal" data-modal="2" >
+    <div class="overlay-about js-overlay-modal" >
+    <button class="about__close js-modal-close">
       <svg class='icon-close' width="12" height="12" >
         <use href="./images/sprite.svg#icon-Vectorclose">
         </use>
       </svg>
     </button>
-    <p class="modal__title">how it’s made?</p>
+    <p class="about__modal--title">how it’s made?</p>
     <iframe class="video" 
     name = "myframe" 
     src = "./images/about/cow-min.png">
@@ -26,7 +29,8 @@
        based on ice cream.
          </p>
      </div>
-  <script defer src="./js/mobile-menu.js"></script>
+</div>
+  <script defer src="./js/modal.js"></script>
   
   
   
