@@ -1,5 +1,6 @@
 .section-footer{
     outline: 2px solid black;
+   
 }
 .vissually-hidden{
     position: absolute;
@@ -15,7 +16,17 @@
     overflow: hidden;
 
 }
+.footer { @media screen and(min-width:768px){
+    align-items: baseline;
+}
 
+}
+.footer__list{
+    @media screen and( max-width:767.98px){ margin-bottom: 60px;
+
+    }
+   
+}
 .footer__list-one{
     font-family: 'Montserrat';
     font-style: normal;
@@ -53,7 +64,7 @@
     }
 }
 
-.footer__list-two{width: 200px;
+.footer__list-two {width: 200px;
      padding-left: 10px;
     font-family: 'Montserrat';
     font-style: normal;
@@ -126,12 +137,32 @@
    
     fill: currentColor;}
 
-    .footer__contacts{display: flex;
+    .footer__contacts{position: relative;
+        display: flex;
         flex-direction:row-reverse;
       
 
     }
    
+    .footer__contacts::after{
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        margin-top: 40px;
+        display: block;
+        width: 100%;
+        border: 1px solid #E1E1E1;
+        margin-bottom: 20px;
+       
+
+    @media screen and(min-width:768px){ margin-top: 60px;
+        margin-bottom: 12px;
+        
+    }
+    
+    }
+
     .footer__contacts-tel{
         text-decoration: none;
         font-family: 'Montserrat';
@@ -169,18 +200,17 @@
         }
 
 }
-.footer__contacts-list{
-    color: #131313;
-}
-.footer__contacts-list{  list-style: none;
+
+.footer__contacts-list{  
     display: flex;
-    
+    padding: 20px;
+   
+
     flex-wrap: wrap;
     justify-content: center;
     text-align: center;
 
-    padding: 20px;
-
+    list-style: none;
     font-family: 'Montserrat';
 font-style: normal;
 font-weight: 700;
@@ -189,12 +219,12 @@ line-height: 1.52;
 
 color: #7A7A7A;
 
-    @media screen and (max-width:480px){flex-direction: column;
+    @media screen and (max-width:767.98px){flex-direction: column;
 
     }
 
     @media screen and (min-width:768px){
-        padding: 12px;
+        // padding: 12px;
 
         font-size: 14px;
         line-height: 1.86;
