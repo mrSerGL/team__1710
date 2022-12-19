@@ -2,7 +2,7 @@
   @media screen and (max-width:767.98px) {
     height: 502px;
   }
-  @media screen and (max-width:1199.98px) {
+  @media screen and (min-width:768px) {
     height: 370px;
   }
   @media screen and (min-width:1200px) {
@@ -76,6 +76,13 @@
 
   line-height: 1.26;
   letter-spacing: 0.04em;
+  @media screen and (min-width: 1200px) {
+    font-size: 38px;
+font-weight: 400;
+
+
+
+  }
 }
 
 .hero-title2 {
@@ -83,6 +90,14 @@
   font-size: 34px;
 
   line-height: 0.97;
+  @media screen and (min-width: 1200px) {
+    font-size: 38px;
+font-weight: 400;
+line-height: 1.26;
+letter-spacing: 0.04em;
+
+
+  }
 }
 
 .hero-title3 {
@@ -93,8 +108,14 @@
   letter-spacing: 0.04em;
 
   @media screen and (min-width: 1200px) {
-    font-size: 38px;
-  }
+    font-size: 38px;	   
+    font-family: Seymour One;
+
+font-weight: 400;
+line-height: 1.26;
+
+
+  }	  
 }
 
 .section-hero__title {
@@ -149,13 +170,111 @@
 }
 
 .section-hero__text {
+  font-family: Montserrat;
+  font-weight: 400;
+  line-height: 1.42;
+  color: rgba(252, 252, 252, 1);
+  position: absolute;
+  height: auto;
+
+  @media screen and (min-width:768px)  {
+    font-size: 12px;
+    width: 139px;
+    top: 210px;
+    left: 216px;
+    bottom: 52px;
+
+  }
+
+    @media screen and (min-width:1200px) {
+  font-size: 14px;
+  width: 200px;
+
+
+  left: 257px;
+  bottom: 143px;
+  top: 381px;
+
+ }
+
   @media screen and (max-width: 767.98px) {
     display: none;
   }
 }
 
 .hero-list {
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: absolute;
+  
+  @media screen and (min-width:768px) {
+    top: 28px;
+  right: 32px;
+  }
+  
+  @media screen and (min-width:1200px){
+    top: 56px;
+    right: 16px;
+  }
+  
   @media screen and (max-width: 767.98px) {
     display: none;
   }
+}
+
+.hero-list__number__arrow{
+  fill:rgba(252, 252, 252, 1);
+  position: absolute;
+    @media screen and (max-width:767.98px) {
+     display: none;
+
+    }
+
+  @media screen and (min-width:768px) {
+bottom: 24px;
+left: 216px;
+}
+
+   @media screen and (min-width:1200px){ 
+bottom: 103px;
+left:257px;
+  }
+}
+
+.hero-list__number{
+ color: rgba(19, 19, 19, 1);
+
+ font-family: Montserrat;
+ font-weight: 900;
+
+line-height: 1.21;
+letter-spacing: 0.04em;
+margin-bottom: 4px;
+
+
+ @media screen and (min-width:768px){ 
+
+font-size: 28px;
+ }
+
+@media screen and (min-width:1200px) {
+
+font-size: 46px;
+}
+}	
+
+.hero-list__item{
+ color: rgba(252, 252, 252, 1);
+ font-family: Montserrat;
+font-size: 8px;
+font-weight: 400;
+line-height: 1.25;
+
+&:not(:last-child){
+ margin-bottom: 20px;
+}
+
+
 }
