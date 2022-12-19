@@ -1,4 +1,9 @@
-.header-nav__logo{
+.header-logo{
+    // position: absolute;
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 37px;
+    
 
    
     margin-top: 12px;
@@ -30,14 +35,17 @@
 
 
 
-
-
-.site-nav{
-    display: flex;
+.header-nav{
     position: absolute;
     right: 368px;
     top: 40px;
     left: 357px;
+}
+
+.site-nav{
+    display: flex;
+    // position: absolute;
+   
 
     color: rgba(252, 252, 252, 1);
 
@@ -49,10 +57,12 @@
 } 
 
 .site-nav__item{
+
 font-family: Montserrat;
 font-size: 16px;
 font-weight: 700;
 line-height: 1.25;
+cursor: pointer;
 
 &:not(:last-child) {
     margin-right: 28px;
@@ -68,6 +78,8 @@ color: rgba(248, 210, 78, 1);
 }
 
 .buttons-header__main{
+
+cursor: pointer;
 display: flex;
 align-items: center;
 
@@ -98,6 +110,7 @@ border-color: transparent;
     margin-left: 4px;
 }
 .buttons-header__menu{
+    cursor: pointer;
     background-color: transparent;
     border-color: transparent;
     margin-right: 32px;
