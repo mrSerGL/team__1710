@@ -1,5 +1,5 @@
-<section class="product">
-  <div class="product-container">
+<section class="product" id="our products">
+  <div class="product-container container">
     <p class="product-logo">100% natural</p>
     <h2 class="product-name">products</h2>
     <ul class="product-card">
@@ -26,13 +26,18 @@
           natural stabilizer
         </p>
 
-        <button type="button" class="button">
-          <svg>
-            <use href="./images/products/product-coffex2-min.png"></use>
+        <button type="button" class="button" data-modal-open>
+          <svg class="product-icon" width="40" height="16">
+            <use href="./images/sprite.svg#icon-Arrow"></use>
           </svg>
-        
-          
         </button>
+
+        <div class="backdrop-product is-hidden" data-modal>
+<div class="modal-product">
+  <button class="close-btn" type="button" data-modal-close></button>
+</div>
+        </div>
+
       </li>
       <li class="product-item coffee list">
         <div class="product-img">
