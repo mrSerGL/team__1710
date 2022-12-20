@@ -57,23 +57,27 @@
 } 
 
 .site-nav__item{
+    
+    &:not(:last-child) {
+        margin-right: 28px;
+   
+ }
 
-font-family: Montserrat;
+
+.site-nav__item-link{
+    text-decoration: none;
+    font-family: Montserrat;
 font-size: 16px;
 font-weight: 700;
 line-height: 1.25;
 cursor: pointer;
 
-&:not(:last-child) {
-    margin-right: 28px;
-
-
-
+color: rgba(252, 252, 252, 1);
 }
 }
 
-.site-nav__item:hover,
-.site-nav__item:focus{ 
+.site-nav__item-link:hover,
+.site-nav__item-link:focus{ 
 color: rgba(248, 210, 78, 1);
 }
 
