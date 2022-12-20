@@ -179,22 +179,25 @@ line-height: 1.26;
   height: auto;
 
   @media screen and (min-width:768px)  {
-    font-size: 12px;
+    font-size: 11px;
     width: 139px;
-    top: 210px;
+    // top: 210px;
     left: 216px;
     bottom: 52px;
 
   }
 
     @media screen and (min-width:1200px) {
-  font-size: 14px;
+   
+  font-size: 13px;
+  
   width: 200px;
 
 
   left: 257px;
   bottom: 143px;
-  top: 381px;
+  // top: 381px;
+ 
 
  }
 
