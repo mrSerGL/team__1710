@@ -143,11 +143,32 @@
    
     .footer__contacts-title{
         display: flex;
-        justify-content: flex-end;
-        margin-bottom: 60px;
+        flex-direction:row-reverse;
+      
 
-        color: #131313;
-    text-decoration: none;
+    }
+   
+    .footer__contacts::after{
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        margin-top: 40px;
+        display: block;
+        width: 100%;
+        border: 1px solid #E1E1E1;
+        margin-bottom: 20px;
+       
+
+    @media screen and(min-width:768px){ margin-top: 60px;
+        margin-bottom: 12px;
+        
+    }
+    
+    }
+
+    .footer__contacts-tel{
+        text-decoration: none;
         font-family: 'Montserrat';
         font-style: normal;
         font-weight: 700;
