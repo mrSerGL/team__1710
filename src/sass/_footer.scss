@@ -1,7 +1,4 @@
-.section-footer{
-    outline: 2px solid black;
-   
-}
+
 .vissually-hidden{
     position: absolute;
     width: 1px;
@@ -20,11 +17,21 @@
     align-items: baseline;
 }
 
+
+
+.container{
+    margin-bottom: 49px;
 }
+
 .footer__list{
     @media screen and ( max-width:767.98px){ margin-bottom: 60px;
 
     }
+
+.footer__list {max-width: 234px;
+    margin-bottom: 43px;
+    
+
    
 }
 .footer__list-one{
@@ -34,8 +41,6 @@
     font-weight: 700;
     
     color: #FCFCFC;
-    
-      width: 232px; 
         margin-bottom: 16px;
 
         font-size: 18px;
@@ -70,7 +75,7 @@
     font-style: normal;
     font-weight: 700;
     font-size: 34px;
-    line-height: 41px;
+    line-height: 1.21;
     letter-spacing: 0.04em;
     text-transform: uppercase;
     
@@ -105,7 +110,7 @@
     list-style: none;
 
     display: flex;
-    align-items:flex-end;
+   
     justify-content:flex-end;
     gap: 20px;
     margin-bottom: 20px;
@@ -120,8 +125,10 @@
 
     }
 }
-
-.footer__social-link {
+.footer__item{
+    gap: 30px;
+}
+.footer__social-sprite {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -131,49 +138,50 @@
     background-color: #F8D24E;
    
     border-radius: 50%;
+
+    &:hover,
+    &:focus{
+        color: #FCFCFC;
+    }
 }
 
 .footer__social-networks{
+    width: 20px;
+    height: 20px;
    
     fill: currentColor;}
 
-    .footer__contacts{position: relative;
+  
+    .footer__contacts-title{
         display: flex;
-        flex-direction:row-reverse;
-      
-
-    }
-   
-    .footer__contacts::after{
-        content: "";
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        margin-top: 40px;
-        display: block;
-        width: 100%;
-        border: 1px solid #E1E1E1;
-        margin-bottom: 20px;
-       
-
-    @media screen and(min-width:768px){ margin-top: 60px;
-        margin-bottom: 12px;
-        
-    }
-    
-    }
-
-    .footer__contacts-tel{
-        text-decoration: none;
-        font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 12px;
-        line-height: 1.86;
-        text-align: right;
-        
-        color: #FFFFFF;
+        justify-content: flex-end;
         margin-bottom: 60px;
+
+        color: #131313;
+        text-decoration: none;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 1.86;
+            text-align: right;
+    
+            @media screen and (min-width:768px){font-size: 14px;
+    
+            }
+            @media screen and (min-width:1200x){font-size: 16px;
+    
+            }
+        }
+        
+
+    
+
+    .footer__contacts-tel{ text-decoration: none;
+
+        margin-left: 3px;
+      
+        color: #FFFFFF;
         @media screen and (min-width:768px){font-size: 14px;
 
         }
@@ -182,59 +190,43 @@
         }
       
     }
-.footer__contacts-title{color: #131313;
-    text-decoration: none;
-        font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 12px;
-        line-height: 1.86;
-        text-align: right;
-        
-      
-        @media screen and (min-width:768px){font-size: 14px;
 
-        }
-        @media screen and (min-width:1200x){font-size: 16px;
 
-        }
-
-}
-
-.footer__contacts-list{  
+ .footer__copyright{  
     display: flex;
-    padding: 20px;
-   
-
-    flex-wrap: wrap;
     justify-content: center;
     text-align: center;
+ min-height: 83px;
+    
+ border-top: 1px solid #E1E1E1;
+}
 
-    list-style: none;
+.footer__copyright-text {
+   width: 220px;
+ padding: 20px;
+   text-align: center;
     font-family: 'Montserrat';
 font-style: normal;
 font-weight: 700;
 font-size: 14px;
 line-height: 1.52;
 
-color: #7A7A7A;
+color: #7A7A7A;}
 
-    @media screen and (max-width:767.98px){flex-direction: column;
 
-    }
 
-    @media screen and (min-width:768px){
-        // padding: 12px;
+@media screen and (min-width:768px){
+    width: 100%;
+  
 
-        font-size: 14px;
-        line-height: 1.86;
-        letter-spacing: 0.02em;
-
-    }
-    @media screen and (min-width:1200px){
-       
-        font-size: 12px;
-
-    }
+    font-size: 14px;
+    line-height: 1.86;
+    letter-spacing: 0.02em;
 
 }
+@media screen and (min-width:1200px){
+   
+    font-size: 12px;
+
+}
+}}
