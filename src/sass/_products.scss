@@ -207,7 +207,7 @@ padding-right: 10px;
   
   .button {
     display: block;
-    
+    background-color: transparent;
     width: 40px;
     height: 16px;
     align-items: center;
@@ -215,11 +215,9 @@ padding-right: 10px;
     margin-left: auto;
   }
   
-  .product-icon{
-    color: #131313;
-  }
-  .product-icon:hover,
-  .product-icon:focus{
+ 
+  .button:hover,
+  .button:focus{
     color: #ffffff;
   }
 
@@ -344,14 +342,14 @@ box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
   left: 50%;
   transform: translate(-50%, -50%);
 
-  background: #FCFCFC;
-border: 2px solid #F8D24E;
-border-radius: 10px;
+   background: #FCFCFC;
+ border: 2px solid #F8D24E;
+ border-radius: 10px;
 
   @media screen and (max-width: 767px) {
-      width: 95%;
+       width: 95%;
       max-width: 280px;
-      height: 95%;
+       height: 95%;
       max-height: 968px;
       padding: 28px;
   }
@@ -372,7 +370,7 @@ border-radius: 10px;
   background-color: transparent;
   cursor: pointer;
   border-radius: 50%;
-  border-width: 0;
+  outline: #d6936d;
 
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -508,7 +506,7 @@ border-radius: 10px;
   background-color: transparent;
   cursor: pointer;
   border-radius: 50%;
-  border-width: 0;
+  // border-width: 0;
 
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
