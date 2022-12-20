@@ -9,13 +9,13 @@
             <img
               class="product-picture cream"
               srcset="
-                ../src\images\products\product-icecream-min.png       200w,
-                ../src\images\products\product-icecreamx2-min.png     400w,
-                ../src\images\products\product-icecreamDesk-min.png,
-                ../src\images\products\product-icecreamdeskx2-min.png 604w
+                ../src/images/products/product-icecream-min.png 200w,
+                ../src/images/products/product-icecreamx2-min.png 400w,
+                ../src/images/products/product-icecreamDesk-min.png 302w,
+                ../src/images/products/product-icecreamdeskx2-min.png 604w
               "
               sizes="(min-width: 1200px) 302px, (min-width: 768px) 200px, (min-width: 480px) 200px, 100vw"
-              src="../src\images\products\product-icecream-min.png"
+              src="../src/images/products/product-icecream-min.png"
               alt="ice-cream"
             />
           </div>
@@ -26,18 +26,11 @@
           natural stabilizer
         </p>
 
-        <button type="button" class="button">
-          <svg class="product-icon" width="40" height="16">
-            <use href="./images/sprite.svg# icon-arrow"></use>
+        <button type="button" class="button ice-coffee" data-modal-ice-cream-open>
+          <svg width="40" height="16" viewBox="0 0 82 32">
+            <path d="M81.414 17.414c0.362-0.362 0.586-0.862 0.586-1.414s-0.224-1.052-0.586-1.414l-12.728-12.728c-0.364-0.377-0.874-0.611-1.439-0.611-1.105 0-2 0.895-2 2 0 0.565 0.234 1.074 0.61 1.438l0.001 0.001 11.314 11.314-11.314 11.314c-0.347 0.359-0.561 0.849-0.561 1.389 0 1.105 0.895 2 2 2 0.54 0 1.030-0.214 1.39-0.562l-0.001 0.001 12.728-12.728zM0 18h80v-4h-80v4z"></path>
           </svg>
         </button>
-
-        <!-- <div class="backdrop-product is-hidden" data-modal>
-<div class="modal-product">
-  <button class="close-btn" type="button" data-modal-close></button>
-</div>
-        </div>  -->
-
       </li>
       <li class="product-item coffee list">
         <div class="product-img">
@@ -45,13 +38,13 @@
             <img
               class="product-picture coffee"
               srcset="
-                ../src\images\products\product-coffe-min.png       200w,
-                ../src\images\products\product-coffex2-min.png     400w,
-                ../src\images\products\product-coffedesk-min.png   302w,
-                ../src\images\products\product-coffedeskx2-min.png 604w
+                ../src/images/products/product-coffe-min.png 200w,
+                ../src/images/products/product-coffex2-min.png 400w,
+                ../src/images/products/product-coffedesk-min.png 302w,
+                ../src/images/products/product-coffedeskx2-min.png 604w
               "
               sizes="(min-width: 1200px) 302px, (min-width: 768px) 200px, (min-width: 480px) 200px, 100vw"
-              src="../src\images\products\product-coffe-min.png"
+              src="../src/images/products/product-coffe-min.png"
               alt="ice-coffee"
             />
           </div>
@@ -62,7 +55,11 @@
           without the use of preservatives and flavor enhancers
         </p>
 
-        <button class="button"></button>
+        <button type="button" class="button ice-coffee" data-modal-ice-coffee-open>
+          <svg width="40" height="16" viewBox="0 0 82 32">
+            <path d="M81.414 17.414c0.362-0.362 0.586-0.862 0.586-1.414s-0.224-1.052-0.586-1.414l-12.728-12.728c-0.364-0.377-0.874-0.611-1.439-0.611-1.105 0-2 0.895-2 2 0 0.565 0.234 1.074 0.61 1.438l0.001 0.001 11.314 11.314-11.314 11.314c-0.347 0.359-0.561 0.849-0.561 1.389 0 1.105 0.895 2 2 2 0.54 0 1.030-0.214 1.39-0.562l-0.001 0.001 12.728-12.728zM0 18h80v-4h-80v4z"></path>
+          </svg>
+        </button>
       </li>
       <li class="product-item milkshakes list">
         <div class="product-img">
@@ -70,9 +67,9 @@
             <img
               class="product-picture milkshakes"
               srcset="
-                ../src/images/products/product-milkshake-min.png      200w,
-                ../src/images/products/product-milkshakex2-min.png    400w,
-                ../src/images/products/product-milkshakedesk-min.png  302w,
+                ../src/images/products/product-milkshake-min.png 200w,
+                ../src/images/products/product-milkshakex2-min.png 400w,
+                ../src/images/products/product-milkshakedesk-min.png 302w,
                 ../src/images/products/product-milkshakedesk2-min.png 604w
               "
               sizes="(min-width: 1200px) 302px, (min-width: 768px) 200px, (min-width: 480px) 200px, 100vw"
@@ -88,8 +85,58 @@
           fruits, berries and other sweets of your choice
         </p>
 
-        <button class="button"></button>
+        <button type="button" class="button milkshake" data-modal-milkshake-open>
+          <svg width="40" height="16" viewBox="0 0 82 32">
+            <path d="M81.414 17.414c0.362-0.362 0.586-0.862 0.586-1.414s-0.224-1.052-0.586-1.414l-12.728-12.728c-0.364-0.377-0.874-0.611-1.439-0.611-1.105 0-2 0.895-2 2 0 0.565 0.234 1.074 0.61 1.438l0.001 0.001 11.314 11.314-11.314 11.314c-0.347 0.359-0.561 0.849-0.561 1.389 0 1.105 0.895 2 2 2 0.54 0 1.030-0.214 1.39-0.562l-0.001 0.001 12.728-12.728zM0 18h80v-4h-80v4z"></path>
+          </svg>
+        </button>
       </li>
     </ul>
   </div>
 </section>
+
+<!-- modal-ice-cream -->
+
+<div class="backdrop-ice-cream is-hidden" data-modal-ice-cream>
+  <div class="modal-ice-cream">
+    <button class="close-btn" type="button" data-modal-ice-cream-close>
+      <svg width="20" height="20" viewBox="0 0 32 32">
+        <path
+        d="M17.253 16l7.369-7.369c0.146-0.17 0.222-0.389 0.213-0.613s-0.101-0.436-0.26-0.594c-0.158-0.158-0.37-0.251-0.594-0.26s-0.442 0.067-0.612 0.213l-7.369 7.369-7.369-7.378c-0.167-0.167-0.394-0.261-0.631-0.261s-0.464 0.094-0.631 0.261c-0.167 0.167-0.261 0.394-0.261 0.631s0.094 0.464 0.261 0.631l7.378 7.369-7.378 7.369c-0.093 0.080-0.169 0.178-0.222 0.288s-0.083 0.23-0.088 0.353c-0.005 0.123 0.016 0.245 0.061 0.359s0.112 0.218 0.199 0.304c0.087 0.087 0.19 0.154 0.304 0.199s0.236 0.065 0.359 0.060c0.122-0.005 0.243-0.035 0.353-0.088s0.208-0.129 0.288-0.222l7.378-7.369 7.369 7.369c0.17 0.146 0.389 0.222 0.612 0.213s0.436-0.101 0.594-0.26c0.158-0.158 0.251-0.37 0.26-0.594s-0.067-0.442-0.213-0.612l-7.369-7.369z"
+      ></path>
+      </svg>
+    </button>
+  </div>
+</div> 
+
+<!-- modal ice-coffee -->
+
+<div class="backdrop-ice-coffee is-hidden" data-modal-ice-coffee>
+  <div class="modal-ice-coffee">
+    <button class="close-btn" type="button" data-modal-ice-coffee-close>
+      <svg width="20" height="20" viewBox="0 0 32 32">
+        <path
+        d="M17.253 16l7.369-7.369c0.146-0.17 0.222-0.389 0.213-0.613s-0.101-0.436-0.26-0.594c-0.158-0.158-0.37-0.251-0.594-0.26s-0.442 0.067-0.612 0.213l-7.369 7.369-7.369-7.378c-0.167-0.167-0.394-0.261-0.631-0.261s-0.464 0.094-0.631 0.261c-0.167 0.167-0.261 0.394-0.261 0.631s0.094 0.464 0.261 0.631l7.378 7.369-7.378 7.369c-0.093 0.080-0.169 0.178-0.222 0.288s-0.083 0.23-0.088 0.353c-0.005 0.123 0.016 0.245 0.061 0.359s0.112 0.218 0.199 0.304c0.087 0.087 0.19 0.154 0.304 0.199s0.236 0.065 0.359 0.060c0.122-0.005 0.243-0.035 0.353-0.088s0.208-0.129 0.288-0.222l7.378-7.369 7.369 7.369c0.17 0.146 0.389 0.222 0.612 0.213s0.436-0.101 0.594-0.26c0.158-0.158 0.251-0.37 0.26-0.594s-0.067-0.442-0.213-0.612l-7.369-7.369z"
+      ></path>
+      </svg>
+    </button>
+  </div>
+</div> 
+
+<!-- modal milkshake -->
+
+<div class="backdrop-milkshake is-hidden" data-modal-milkshake>
+  <div class="modal-milkshake">
+    <button class="close-btn" type="button" data-modal-ice-cream-close>
+      <svg width="20" height="20" viewBox="0 0 32 32">
+        <path
+        d="M17.253 16l7.369-7.369c0.146-0.17 0.222-0.389 0.213-0.613s-0.101-0.436-0.26-0.594c-0.158-0.158-0.37-0.251-0.594-0.26s-0.442 0.067-0.612 0.213l-7.369 7.369-7.369-7.378c-0.167-0.167-0.394-0.261-0.631-0.261s-0.464 0.094-0.631 0.261c-0.167 0.167-0.261 0.394-0.261 0.631s0.094 0.464 0.261 0.631l7.378 7.369-7.378 7.369c-0.093 0.080-0.169 0.178-0.222 0.288s-0.083 0.23-0.088 0.353c-0.005 0.123 0.016 0.245 0.061 0.359s0.112 0.218 0.199 0.304c0.087 0.087 0.19 0.154 0.304 0.199s0.236 0.065 0.359 0.060c0.122-0.005 0.243-0.035 0.353-0.088s0.208-0.129 0.288-0.222l7.378-7.369 7.369 7.369c0.17 0.146 0.389 0.222 0.612 0.213s0.436-0.101 0.594-0.26c0.158-0.158 0.251-0.37 0.26-0.594s-0.067-0.442-0.213-0.612l-7.369-7.369z"
+      ></path>
+      </svg>
+    </button>
+  </div>
+</div> 
+
+<script src="../js/modal-ice-cream.js"></script>
+<script src="../js/modal-ice-coffee.js"></script>
+<script src="../js/modal-milkshare.js"></script>
