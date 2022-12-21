@@ -277,7 +277,10 @@
     min-width: 0;
 }
 
-.slider .slick-arrow {
+.slider .slick-arrow  {
+    display: none;
+}
+.slider .slick-arrow.slick-next {
     display: none;
 }
 

@@ -2058,6 +2058,10 @@ textarea {
   display: none;
 }
 
+.slider .slick-arrow.slick-next {
+  display: none;
+}
+
 .slider .slick-dots {
   display: flex;
   align-items: center;
