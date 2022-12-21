@@ -17,18 +17,19 @@
 // .footer .conteiner{
 //     margin-bottom: 49px;
 
-//     @media screen and (min-width:480px){
-//         display: flex;
-      
-//         margin-bottom: 91px;
-        
-//     }
-// }
+.footer-section{ 
+    @media screen and (min-width:768px){
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    padding-top: 60px;
+}
 
-
+}
 
 .footer__list {
-    margin-bottom: 43px;
+    padding-bottom: 60px;
+    padding-right: 333px;
 
    
   
@@ -167,8 +168,6 @@
         }
         
 
-    
-
     .footer__contacts-tel{ text-decoration: none;
 
         margin-left: 3px;
@@ -187,10 +186,11 @@
 .footer__copyright{  
     display: flex;
     flex-direction: column;
+    width: 100%;
     flex-wrap: wrap;
     justify-content: center;
    
-    text-align: center;
+  
 min-height: 83px;
     
 border-top: 1px solid #E1E1E1;
