@@ -1,32 +1,23 @@
 .section-contacts {
     min-width: 320px;
     padding: 40px 0 60px;
-
-    background-image: linear-gradient(transparent 400px, #84A178 400px), url(../images/background/Backgroud_mobile-min.png);
-    
-
-    @media screen and (min-width: 768px) {
-            background-image: linear-gradient(transparent 345px, #84A178 345px), url(../images/background/Background_tablet-min.png);
-        }
-    
-    @media screen and (min-width: 1200px) {
-            background-image: linear-gradient(transparent 170px, #84A178 170px), url(../images/background/Backgroud_desktop-min.png);
-        }
-
 }
 
 .section-contacts__item {
     margin-bottom: 20px;
+    margin-top: -400px;
 
     @media screen and (min-width: 768px) {
         display: flex;
         gap: 16px;
         margin-bottom: 40px;
+        margin-top: -345px;
     }
 
     @media screen and (min-width: 1200px) {
         gap: 32px;
         margin-bottom: 60px;
+        margin-top: -170px;
     }
 }
 
