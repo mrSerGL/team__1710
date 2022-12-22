@@ -32,11 +32,14 @@
   padding: 28px;
   width: 95%;
   height: 95%;
-  overflow-y: scroll;
   @media screen and (max-width: 767px) {
     max-width: 280px;
     max-height: 991px;
   }
+  @media screen and (max-width: 1199px) {
+    overflow-y: scroll;
+  }
+
   @media screen and (min-width: 768px) {
     max-width: 568px;
     max-height: 644px;
