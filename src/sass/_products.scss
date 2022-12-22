@@ -2,10 +2,11 @@
   width: 480px;
   padding-top: 60px;
   padding-bottom: 46px;
+  
 
   @media screen and (min-width: 768px) {
     width: 768px;
-    padding-bottom: 60px;
+    padding-bottom: 72px;
      
   }
   @media screen and (min-width: 1200px) {
@@ -73,7 +74,7 @@
   }
 
   .product-card {
-    
+    padding-left: 0;
     
     @media screen and (min-width: 768px) {
       display: flex;
@@ -118,8 +119,13 @@ padding-right: 10px;
     padding-top: 123px;
     width: 280px;
     margin-bottom: 168px;
-    margin-left: auto;
     margin-right: auto;
+    margin-left: auto;
+
+    &:last-child{
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
     
 
     @media screen and (min-width: 768px) {
@@ -345,19 +351,26 @@ box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
    background: #FCFCFC;
  border: 2px solid #F8D24E;
  border-radius: 10px;
+
+      width: 95%;
+      max-width: 280px;
+       height: 95%;
+      max-height: 480px;
+      padding: 28px;
+      
  
 
   @media screen and (max-width: 767px) {
        width: 95%;
       max-width: 280px;
        height: 95%;
-      max-height: 968px;
+      max-height: 480px;
       padding: 28px;
   }
 
   @media screen and (min-width: 768px) {
       width: 568px;
-      height: 996px;
+      height: 700px;
       padding: 32px 40px;
   }
 }
@@ -415,17 +428,23 @@ box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
 border: 2px solid #F8D24E;
 border-radius: 10px;
 
+width: 95%;
+max-width: 280px;
+ height: 95%;
+max-height: 480px;
+padding: 28px;
+
   @media screen and (max-width: 767px) {
       width: 95%;
       max-width: 280px;
       height: 95%;
-      max-height: 968px;
+      max-height: 480px;
       padding: 28px;
   }
 
   @media screen and (min-width: 768px) {
       width: 568px;
-      height: 996px;
+      height: 700px;
       padding: 32px 40px;
   }
 }
@@ -483,18 +502,24 @@ border-radius: 10px;
 border: 2px solid #F8D24E;
 border-radius: 10px;
 
+width: 95%;
+max-width: 280px;
+ height: 95%;
+max-height: 480px;
+padding: 28px;
+
 
   @media screen and (max-width: 767px) {
       width: 95%;
       max-width: 280px;
       height: 95%;
-      max-height: 968px;
+      max-height: 480px;
       padding: 28px;
   }
 
   @media screen and (min-width: 768px) {
       width: 568px;
-      height: 996px;
+      height: 700px;
       padding: 32px 40px;
   }
 }
