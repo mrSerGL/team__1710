@@ -2,9 +2,7 @@
   background-color: var(--section-color1);
 }
 
-.advantages__title{
-  display: none;
-}
+
 .advantages__card{
 padding-top: 50px;
 margin: 0 auto;
@@ -17,7 +15,7 @@ text-align: center;
   padding-bottom: 204px;  
 } 
 @media  screen and (min-width:$desktop){
-  padding-bottom: 243px;  
+  padding-bottom: 178px;  
 } 
 }
 .advantages__list{
@@ -65,7 +63,7 @@ margin-right: auto;
 .advantages__first::before{
   content: '';
   display: inline-block;
- justify-content:center;
+  justify-content:center;
   width: 50px;
   height: 50px;
   margin: 0 auto;
@@ -135,7 +133,7 @@ line-height: 1.22;
 text-align: center;
 letter-spacing: 0.04em;
 color:var(--section-color2);
-margin-top: 22px;
+margin-top: 16px;
 
 @media  screen and  (min-width:$tablet) and (max-width:1199px){
   font-size: 48px;
