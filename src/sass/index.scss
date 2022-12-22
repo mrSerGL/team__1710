@@ -1,0 +1,30 @@
+// Base styles
+@import './base/base';
+@import './base/reset';
+@import './base/typography';
+
+// Utils styles
+@import './utils/animations';
+@import './utils/decimals';
+@import './utils/mixins';
+@import './utils/placeholders';
+@import './utils/v-hidden';
+@import './utils/variables';
+
+
+// Components styles
+@import './common';
+// @import './example';
+@import './header';
+@import './header-modal';
+@import './mobile-menu';
+@import './hero';
+@import './products';
+@import './about';
+@import './about-modal';
+@import './advantages';
+@import './gallery';
+@import './reviews';
+@import './contacts';
+@import './footer';
+@import './test';
