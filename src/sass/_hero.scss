@@ -10,63 +10,118 @@
   }
 }
 
+
+.section-main-img{
+  position: absolute;
+  bottom: 0px;
+ 
+
+  // @media screen and (max-width:480px){
+  //  width:480px;
+  // }
+ 
+
+  @media screen and (max-width:767.98px){
+   width: 177px;
+    right: 35%;
+  }
+
+
+  @media screen and (min-width:768px) {
+    right: 12%;
+  }
+
+  @media screen and (min-width:1200px) {
+    right: 9%;
+  }
+}
+
+
+.section-ice-img{
+  position: absolute;
+  left: 16px;
+
+  @media screen and (max-width:767.98px) {
+    display: none;
+  }
+
+  @media screen and (min-width:768px){
+bottom: 12px;
+  }
+
+  @media screen and (min-width:1200px){
+width: 225px;
+bottom: 65px;
+
+  }
+}
+
 .hero-container {
   position: relative;
   height: 100%;
-  background-position: bottom center, bottom;
+  background-position: bottom;
+  background-size: 100%;
 
   background-repeat: no-repeat;
 
   // mobile screen
-  background-image: url(../images/products/ice-creamdeskx2-min.png),
-    url(../images/bg-dots/mob_dots.svg);
+ 
+ 
+      @media screen and (max-width:767.98px) {
+        max-width: 480px;
+      
+    
+  
+  background-image:
+    url(../images/background/dotsmob-min.png);
 
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: url(../images/products/ice-creammobx2-min.png),
-      url(../images/bg-dots/mob_dots.svg);
+    background-image: 
+      url(../images/background/dotsmobx2-min.png);
   }
-  @media screen and (max-width: 767.98px) {
-    background-size: 177px 217px, 100%;
-  }
+}
+
+
+  // @media screen and (max-width: 767.98px) {
+  //   background-size: 177px 217px, 100%;
+  // }
 
   // tablet screen
   @media screen and (min-width: 768px) {
-    background-image: url(../images/products/ice-creamtab-min.png),
-      url(../images/manyice-creamdesk-min.png),
-      url(../images/bg-dots/tab_dots.svg);
+    background-image: 
+      url(../images/background/dotstab-min.png);
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(../images/products/ice-creamtabx2-min.png),
-        url(../images/bg-dots/tab_dots.svg);
+      background-image:
+        url(../images/background/dotstabx2-min.png);
     }
 
-    @media screen and (min-width: 768px) {
-      background-position: bottom right 92px, bottom 12px left 32px, bottom;
-      background-size: 268px 329px, 152px 152px, 100%;
-    }
+    // @media screen and (min-width: 768px) {
+    //   background-position: bottom right 92px, bottom 12px left 32px, bottom;
+    //   background-size: 268px 329px, 152px 152px, 100%;
+    // }
   }
 
   // desktop screen
   @media screen and (min-width: 1200px) {
-    background-image: url(../images/products/ice-creamdesk-min.png),
-      url(../images/manyice-creamdesk-min.png),
-      url(../images/bg-dots/desk_dots.svg);
+    background-image:
+      url(../images/background/dotsdesk-min.png);
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(../images/products/ice-creamdeskx2-min.png),
-        url(../images/bg-dots/desk_dots.svg);
+      background-image:
+        url(../images/background/dotsdeskx2-min.png);
     }
-    @media screen and (min-width: 1200px) {
-      background-position: right 92px bottom, left 16px bottom 65px, bottom;
+    // @media screen and (min-width: 1200px) {
+    //   background-position: right 92px bottom, left 16px bottom 65px, bottom;
 
-      background-size: 456px 560px, 225px 225px, 100%;
-    }
+    //   background-size: 456px 560px, 225px 225px, 100%;
+    // }
   }
 }
 
