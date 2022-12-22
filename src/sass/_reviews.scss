@@ -1,6 +1,6 @@
 .reviews{
   padding-top: 178px;
-  padding-bottom: 393px;
+  padding-bottom: 417px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -28,8 +28,8 @@
     }
   
     @media  screen and (min-width:$desktop) {
-      padding-top: 562px;
-      padding-bottom: 228px;
+      padding-top: 464px;
+      padding-bottom: 272px;
       height: 1053px;
       background-image: url(../images/background/Backgroud_desktop-min.png);
     
@@ -54,7 +54,6 @@
       } 
       @media  screen and (min-width:$desktop){
         padding-bottom: 140px;  
-        // padding-bottom: 283px;  
       } 
       }
      
