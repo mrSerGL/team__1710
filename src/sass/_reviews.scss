@@ -1,6 +1,6 @@
 .reviews{
   padding-top: 178px;
-  padding-bottom: 417px;
+  padding-bottom: 393px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -29,7 +29,7 @@
   
     @media  screen and (min-width:$desktop) {
       padding-top: 464px;
-      padding-bottom: 272px;
+      padding-bottom: 228px;
       height: 1053px;
       background-image: url(../images/background/Backgroud_desktop-min.png);
     
@@ -148,3 +148,35 @@
           
       }
       }
+   .reviews__wrapper{
+    display: flex;
+    text-align: center;
+    margin: 0 auto;
+      }
+
+     .reviews__slider{
+      display: inline-flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 18px;
+      padding-left: 0;
+      padding-right: 0;
+      margin-left: auto;
+      margin-right: auto; 
+      margin-top: 12px;
+      margin-bottom: 0;
+
+      @media  screen and  (min-width:$tablet){
+        margin-top: 32px;
+      }
+     }
+    .reviews__slider-item{
+      background-color:#D9D9D9;
+      width: 12px;
+      height: 12px;
+      list-style-type: none;
+      border-radius:50%;
+    }
+    .reviews__slider-item:first-child{
+      background-color:#84A178;
+    }
