@@ -380,6 +380,7 @@
 
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
 
 .backdrop-ice-cream.is-hidden {
@@ -387,21 +388,28 @@
   pointer-events: none;
   transform: scale(0.2);
 }
+
 .modal-ice-cream {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 
-
   background: #fcfcfc;
   border: 2px solid #f8d24e;
   border-radius: 10px;
 
+width: 95%;
+max-width: 280px;
+ height: 95%;
+max-height: 968px;
+padding: 28px;
+
   @media screen and (max-width: 767px) {
+
     width: 95%;
     width: 280px;
-    //  height: 95%;
+    // height: 95%;
     // max-height: 968px;
     padding: 28px;
   }
@@ -413,6 +421,7 @@
 
   }
 }
+
 .close-btn {
   position: absolute;
   right: 12px;
@@ -437,6 +446,29 @@
   }
 }
 
+.product-modal-img{
+  position: absolute;
+  top: 120px;
+  left: 75px;
+}
+
+.product-modal-overlay{
+  position: relative;
+  width: 132px;
+  height: 132px;
+  border-radius: 50%;
+  background: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #D9D9D9;
+box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+}
+
+.product-modal-picture{
+  position: absolute;
+  width: 132px;
+  height: 132px;
+  bottom: 7px;
+
+}
+
 .product-ingridients {
   font-family: 'Seymour One';
   font-size: 20px;
@@ -446,11 +478,11 @@
   align-items: center;
   text-align: center;
   color: #131313;
-  margin-bottom: 50px;
+  margin-bottom: 293px;
 }
 .product-ingr {
   display: flex;
-  gap: 50px;
+  gap: 25px;
 
   @media screen and (min-width: 768px) {
     gap: 300px;
