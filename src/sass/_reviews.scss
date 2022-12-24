@@ -1,3 +1,4 @@
+
 .reviews {
   display: flex;
   position: relative;
@@ -22,84 +23,179 @@
     height: 1161px;
     background-image: url(../images/background/Background_tablet-min.png);
 
+
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
       background-image: url(../images/background/Background_tabletx2-min.png);
     }
-  }
 
-  @media screen and (min-width:$desktop) {
-    padding-top: 562px;
-    padding-bottom: 228px;
-    height: 1151px;
-    background-image: url(../images/background/Backgroud_desktop-min.png);
 
-    @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-      background-image: url(../images/background/Backgroud_desktopx2-min.png);
+  
+    @media  screen and (min-width:$tablet) and (max-width:1199px){
+      padding-top: 283px;
+      padding-bottom: 379px;
+      height:1017px;
+      background-image: url(../images/background/Background_tablet-min.png);
+     
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/background/Background_tabletx2-min.png);
+      }
     }
-  }
+  
+    @media  screen and (min-width:$desktop) {
+      padding-top: 464px;
+      padding-bottom: 228px;
+      height: 1053px;
+      background-image: url(../images/background/Backgroud_desktop-min.png);
+    
+        @media (min-device-pixel-ratio: 2),
+          (min-resolution: 192dpi),
+          (min-resolution: 2dppx) {
+          background-image: url(../images/background/Backgroud_desktopx2-min.png);
+        }
+      }
+    }
+  
+    .reviews__card{
+      padding-top: 50px;
+      margin: 0 auto;
+      padding-bottom: 64px; 
+      display: flex;
+      text-align: center;
+      
+      @media  screen and  (min-width:$tablet) and (max-width:1199px){
+        padding-top: 60px;
+        padding-bottom: 204px;  
+      } 
+      @media  screen and (min-width:$desktop){
+        padding-bottom: 140px;  
+      } 
+      }
+     
+      .reviews__list{
+        padding-left: 0;
+        padding-right: 0;
+      }
+      .reviews__item{
+      display: block;
+      align-items: center;
+      list-style-type: none;
+      width: 280px;
+      margin: 0 auto;
+      
+  
+      
+      @media  screen and (min-width:$mobile) and (max-width:767px){
+          width: 440px;
+      }
+      @media  screen and  (min-width:$tablet) and (max-width:1199px){
+        width: 605px;
+        
+      }
+      @media  screen and (min-width:$desktop){
+        width: 968px;
+      } 
+      }
+      
+      .reviews__image{
+        border-radius:44px;
+        margin: 0 auto;
+        margin-bottom: 32px;
+      }
+  
+      .reviews__comment{
+          display: block;
+          width:280;
+          background: var(--section-color1);
+          border-radius: 10px;
+          padding: 35px 39px;
+  
+          @media  screen and (min-width:$mobile) and (max-width:767px){
+            
+              width: 440px;
+          }
+          @media  screen and  (min-width:$tablet) and (max-width:1199px){
+            padding: 28px 80px;
+            width: 605px;
+            
+          }
+          @media  screen and (min-width:$desktop){
+            padding: 42px 74px;
+            width: 968px;
+          } 
+          }
+  
+      .reviews__text{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 2.58;
+        text-align: center;
+        color:var(--section-color2);
+  
+      @media  screen and  (min-width:$tablet) and (max-width:1199px){
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.86;
+        text-align: center;
+        letter-spacing: 0.04em;
+      }
+      @media  screen and (min-width:$desktop){
+        font-size: 16px;
+        line-height: 1.88;
+      } 
+      }
+  
+      .reviews__subscriber{    
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 1.85%;
+      text-align: center;
+      color: #131313;
+      margin-top: 32px;
+  
+      @media  screen and  (min-width:$tablet) and (max-width:1199px){
+          font-size: 16px;
+          line-height: 1.88;
+          
+      }
+      }
+   .reviews__wrapper{
+    display: flex;
+    text-align: center;
+    margin: 0 auto;
+      }
 
-}
+     .reviews__slider{
+      display: inline-flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 18px;
+      padding-left: 0;
+      padding-right: 0;
+      margin-left: auto;
+      margin-right: auto; 
+      margin-top: 12px;
+      margin-bottom: 0;
 
-.comments_wrapper {
-  max-width: 100%;
-  // height: 256px;
-}
+      @media  screen and  (min-width:$tablet){
+        margin-top: 32px;
+      }
+     }
+    .reviews__slider-item{
+      background-color:#D9D9D9;
+      width: 12px;
+      height: 12px;
+      list-style-type: none;
+      border-radius:50%;
+    }
+    .reviews__slider-item:first-child{
+      background-color:#84A178;
+    }
 
-.reviews__comments {
-  background-color: #84A178;
-  padding: 35px 39px;
-  margin-top: 32px;
-  margin-bottom: 32px;
-  // min-height: 256px;
-
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 2.58;
-
-  text-align: center;
-
-  color: #FCFCFC;
-
-  @media (min-width: 768px) and (max-width: 1199px) {
-    padding: 28px 80px 29px 80px;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.85;
-  }
-
-  @media (min-width: 1200px) {
-    padding: 43px 109px;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.87;
-  }
-}
-
-.reviews__name {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.85;
-  margin-bottom: 32px;
-  text-align: center;
-
-  color: #131313;
-
-  @media (min-width: 768px) {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.87;
-  }
-}
-
-.photo {
-  border-radius: 100%;
-}

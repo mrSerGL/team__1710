@@ -1,3 +1,42 @@
+.product {
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+   // mobile
+   background-image: url(../images/background/Backgroud_mobile-min.png);
+   // mobile retina
+   @media (min-device-pixel-ratio: 2),
+     (min-resolution: 192dpi),
+     (min-resolution: 2dppx) {
+     background-image: url(../images/background/Backgroud_mobilex2-min.png);
+   }
+ 
+   // tablet
+   @media screen and (min-width: 481px) {
+     background-image: url(../images/background/Background_tablet-min.png);
+     // tablet retina
+     @media (min-device-pixel-ratio: 2),
+       (min-resolution: 192dpi),
+       (min-resolution: 2dppx) {
+       background-image: url(../images/background/Background_tabletx2-min.png);
+     }
+ 
+     // desktop
+     @media screen and (min-width: 769px) {
+       background-image: url(../images/background/Backgroud_desktop-min.png);
+       // tablet retina
+       @media (min-device-pixel-ratio: 2),
+         (min-resolution: 192dpi),
+         (min-resolution: 2dppx) {
+         background-image: url(../images/background/Backgroud_desktopx2-min.png);
+       }
+     }
+   }
+
+}
+
 .product-container {
   padding-top: 60px;
   padding-bottom: 46px;
@@ -15,40 +54,40 @@
     padding-bottom: 57px;
   }
 
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  // background-position: center;
 
-  // mobile
-  background-image: url(../images/background/Backgroud_mobile-min.png);
-  // mobile retina
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    background-image: url(../images/background/Backgroud_mobilex2-min.png);
-  }
+  // // mobile
+  // background-image: url(../images/background/Backgroud_mobile-min.png);
+  // // mobile retina
+  // @media (min-device-pixel-ratio: 2),
+  //   (min-resolution: 192dpi),
+  //   (min-resolution: 2dppx) {
+  //   background-image: url(../images/background/Backgroud_mobilex2-min.png);
+  // }
 
-  // tablet
-  @media screen and (min-width: 481px) {
-    background-image: url(../images/background/Background_tablet-min.png);
-    // tablet retina
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url(../images/background/Background_tabletx2-min.png);
-    }
+  // // tablet
+  // @media screen and (min-width: 481px) {
+  //   background-image: url(../images/background/Background_tablet-min.png);
+  //   // tablet retina
+  //   @media (min-device-pixel-ratio: 2),
+  //     (min-resolution: 192dpi),
+  //     (min-resolution: 2dppx) {
+  //     background-image: url(../images/background/Background_tabletx2-min.png);
+  //   }
 
-    // desktop
-    @media screen and (min-width: 769px) {
-      background-image: url(../images/background/Backgroud_desktop-min.png);
-      // tablet retina
-      @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-        background-image: url(../images/background/Backgroud_desktopx2-min.png);
-      }
-    }
-  }
+  //   // desktop
+  //   @media screen and (min-width: 769px) {
+  //     background-image: url(../images/background/Backgroud_desktop-min.png);
+  //     // tablet retina
+  //     @media (min-device-pixel-ratio: 2),
+  //       (min-resolution: 192dpi),
+  //       (min-resolution: 2dppx) {
+  //       background-image: url(../images/background/Backgroud_desktopx2-min.png);
+  //     }
+  //   }
+  // }
 
   .product-logo {
     font-family: 'Montserrat';
