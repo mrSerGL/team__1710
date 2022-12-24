@@ -1,18 +1,36 @@
-.reviews{
-  padding-top: 178px;
-  padding-bottom: 393px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-  
-    height: 1037px;
-    background-image: url(../images/background/Backgroud_mobile-min.png);
-  
+
+.reviews {
+  display: flex;
+  position: relative;
+  text-align: center;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  height: 1069px;
+  background-image: url(../images/background/Backgroud_mobile-min.png);
+
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    background-image: url(../images/background/Backgroud_mobilex2-min.png);
+  }
+
+  @media screen and (min-width:$tablet) and (max-width:1199px) {
+    padding-top: 283px;
+    padding-bottom: 379px;
+    height: 1161px;
+    background-image: url(../images/background/Background_tablet-min.png);
+
+
     @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url(../images/background/Backgroud_mobilex2-min.png);
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      background-image: url(../images/background/Background_tabletx2-min.png);
     }
+
+
   
     @media  screen and (min-width:$tablet) and (max-width:1199px){
       padding-top: 283px;
@@ -180,3 +198,4 @@
     .reviews__slider-item:first-child{
       background-color:#84A178;
     }
+
