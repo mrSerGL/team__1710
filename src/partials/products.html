@@ -117,16 +117,63 @@
         <use href="./images/sprite.svg#icon-Vectorclose"></use>
       </svg>
     </button>
-    <h2 class="product-ingridients">Chololate icecream</h2>
-    <div class="product-modal-img">
+    <p class="modal-title">Chololate icecream</p>
+     <div class="product-modal-img">
       <div class="product-modal-overlay">
         <img class="product-modal-picture"
-         src="./images/products/product-icecream-min.png"
-          alt="ice-cream">
+        
+         src="./images/modal/modal-icecreammob-min.png"
+          alt="ice-cream"
+          srcset="../src/images/modal/modal-icecreammob-min.png 132w, ../src/images/modal/modal-icecreammobx2-min.png 264w" >
       </div>
       
-    </div>
-    <h3 class="product-ingridient-name">Ingredients</h3>
+    </div> 
+    <ul class="product-calories list">
+      <li>
+        <div class="calories-overlay">
+          <img class="calories-picture"
+          src="./images/sprite.svg#icon-Ellipse"
+          alt="calories">
+          <div class="calories-numbers">320</div>
+          <div class="value">kcal</div>
+  
+        </div>
+      </li>
+      <li>
+        <div class="calories-overlay">
+          <img class="calories-picture"
+          src="./images/sprite.svg#icon-Ellipse"
+          alt="calories">
+          <div class="calories-numbers">4g</div>
+          <div class="value">Prote...</div>
+  
+        </div>
+      </li>
+      <li>
+        <div class="calories-overlay">
+          <img class="calories-picture"
+          src="./images/sprite.svg#icon-Ellipse"
+          alt="calories">
+          <div class="calories-numbers">8,2g</div>
+          <div class="value">Fats</div>
+  
+        </div>
+      </li>
+      <li>
+        <div class="calories-overlay">
+          <img class="calories-picture"
+          src="./images/sprite.svg#icon-Ellipse"
+          alt="calories">
+          <div class="calories-numbers">40,4g</div>
+          <div class="value">Carbs</div>
+  
+        </div>
+      </li>
+    </ul>
+    
+    
+    
+    <p class="product-ingridient-name">Ingredients</p>
     <div class="product-ingr">
       <div>
         <ul class="product-food list">
@@ -149,6 +196,19 @@
         </ul>
       </div>
     </div>
+    <form class="product-modal-form" id="modal-form"> 
+      <div class="product-modal-form_field">
+          <input class="product-modal-form_input" type="text" name="user_name" placeholder="Name" id="name" required>
+      </div>
+      <div class="product-modal-form_field">
+        <input class="product-modal-form_input" type="tel" name="user_phone" placeholder="Phone" id="phone" required>
+      </div>
+       <div class="product-modal-form_comment">
+        <textarea class="product-modal-form_input" name="user_comment" id="" rows="10" placeholder="Comment"></textarea>
+       </div> 
+        <button class="modal-button" type="submit">Submit</button>
+      
+    </form>
   </div>
 </div>
 
