@@ -706,18 +706,18 @@ margin-left: auto;
   border: 2px solid #f8d24e;
   border-radius: 10px;
 
-width: 95%;
-max-width: 280px;
- height: 95%;
-max-height: 480px;
-padding: 28px;
+// width: 95%;
+// max-width: 280px;
+//  height: 95%;
+// max-height: 968px;
+// padding: 28px;
 
   @media screen and (max-width: 767px) {
 
     width: 95%;
-    width: 280px;
-    // height: 95%;
-    // max-height: 968px;
+    max-width: 280px;
+     height: 95%;
+     max-height: 968px;
     padding: 28px;
   }
 
