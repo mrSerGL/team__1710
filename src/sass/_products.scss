@@ -380,6 +380,7 @@
 
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
 
 .backdrop-ice-cream.is-hidden {
@@ -387,32 +388,41 @@
   pointer-events: none;
   transform: scale(0.2);
 }
+
 .modal-ice-cream {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 
-
   background: #fcfcfc;
   border: 2px solid #f8d24e;
   border-radius: 10px;
+  overflow: scroll;
+
+// width: 95%;
+// max-width: 280px;
+//  height: 95%;
+// max-height: 968px;
+// padding: 28px;
 
   @media screen and (max-width: 767px) {
+
     width: 95%;
-    width: 280px;
-    //  height: 95%;
-    // max-height: 968px;
-    padding: 28px;
+    max-width: 280px;
+     height: 95%;
+     max-height: 968px;
+    padding: 28px 20px;
   }
 
   @media screen and (min-width: 768px) {
     width: 568px;
-    // height: 996px;
+     height: 996px;
     padding: 32px 40px;
 
   }
 }
+
 .close-btn {
   position: absolute;
   right: 12px;
@@ -437,7 +447,7 @@
   }
 }
 
-.product-ingridients {
+.modal-title {
   font-family: 'Seymour One';
   font-size: 20px;
   line-height: 1.4;
@@ -446,11 +456,132 @@
   align-items: center;
   text-align: center;
   color: #131313;
-  margin-bottom: 50px;
+   margin-bottom: 293px;
+
+   @media screen and (min-width: 768px) {
+    margin-bottom: 630px;
+  }
 }
+
+.product-modal-img{
+  position: absolute;
+  top: 120px;
+  left: 75px;
+  margin-bottom: 22px;
+
+  @media screen and (min-width: 768px) {
+    top: 400px;
+    left: 215px;
+  }
+}
+
+.product-modal-overlay{
+  position: relative;
+  width: 132px;
+  height: 132px;
+  border-radius: 50%;
+  background: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #D9D9D9;
+box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+}
+
+.product-modal-picture{
+  position: absolute;
+  width: 132px;
+  height: 132px;
+  bottom: 7px;
+
+}
+.product-calories{
+  display: flex;
+  gap: 9px;
+  position: absolute;
+  top: 260px;
+  left: 20px;
+
+  @media screen and (min-width: 768px) {
+    gap: 20px;
+    top: 550px;
+    left: 115px;
+  }
+
+}
+.calories-overlay{
+  position: relative;
+  width: 53px;
+height: 72px;
+border: 2px solid #9CBE8F;
+border-radius: 40px;
+
+@media screen and (min-width: 768px) {
+  width: 65px;
+   height: 90px;
+}
+}
+
+.calories-picture{
+  position: absolute;
+  width: 43px;
+height: 43px;
+background: #9CBE8F;
+border: 2px solid #9CBE8F;
+box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
+border-radius: 50%;
+top: 0;
+left: 3px;
+
+@media screen and (min-width: 768px) {
+  top: 0;
+left: 9px;
+}
+}
+.calories-numbers{
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 10px;
+line-height: 2.8;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #131313;
+border-radius: 50%;
+border: 2px solid #9CBE8F;
+
+@media screen and (min-width: 768px) {
+  top: 0;
+left: 15px;
+}
+}
+.value{
+  position: absolute;
+  top: 50px;
+  left: 10px;
+  font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 10px;
+line-height: 1.2;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #131313;
+
+@media screen and (min-width: 768px) {
+  top: 57px;
+  left: 15px;
+}
+}
+
+
 .product-ingr {
   display: flex;
-  gap: 50px;
+  gap: 25px;
+  margin-bottom: 40px;
 
   @media screen and (min-width: 768px) {
     gap: 300px;
@@ -465,6 +596,7 @@
   display: flex;
   align-items: center;
   text-align: center;
+  justify-content: center;
 
   color: #131313;
   margin-bottom: 24px;
@@ -477,7 +609,7 @@
   font-size: 14px;
   line-height: 1.76;
   display: flex;
-  align-items: center;
+  // align-items: center;
   // text-align: center;
   letter-spacing: 0.04em;
   color: #131313;
@@ -500,6 +632,48 @@
   padding-right: 0;
 
   color: #131313;
+}
+.product-modal-form_field{
+  margin-bottom: 16px;
+  width: 100%;
+  height: 42px;
+  background: rgba(248, 210, 78, 0.1);
+border: 1px solid #84A178;
+border-radius: 10px;
+}
+.product-modal-form_input{
+  font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 1.4;
+color: #131313;
+background-color: transparent;
+border: none;
+align-items: flex-start;
+justify-content: baseline;
+text-align: justify;
+padding: 11px 10px;
+
+}
+.product-modal-form_comment{
+  margin-bottom: 24px;
+  background: rgba(248, 210, 78, 0.1);
+border: 1px solid #84A178;
+border-radius: 10px;
+resize: none;
+}
+
+.modal-button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #F8D24E;
+border-radius: 10px;
+width: 132px;
+height: 42px;
+margin-right: auto;
+margin-left: auto;
 }
 
 // modal-ice-coffee
