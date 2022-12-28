@@ -14,6 +14,20 @@
 .section-main-img{
   position: absolute;
   bottom: 0px;
+
+  animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+
+  @keyframes scale-in-center {
+    0% {
+      transform: scale(0);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
  
 
   // @media screen and (max-width:480px){
@@ -40,6 +54,20 @@
 .section-ice-img{
   position: absolute;
   left: 16px;
+  animation: rotate-scale-down 0.65s linear both;
+
+  @keyframes rotate-scale-down {
+    0% {
+      transform: scale(1) rotateZ(0);
+    }
+    50% {
+      transform: scale(0.5) rotateZ(180deg);
+    }
+    100% {
+      transform: scale(1) rotateZ(360deg);
+    }
+  }
+  
 
   @media screen and (max-width:767.98px) {
     display: none;
@@ -185,6 +213,23 @@ line-height: 1.26;
   color: rgba(252, 252, 252, 1);
   text-transform: uppercase;
 
+  animation: focus-in-expand-fwd 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+
+
+  @keyframes focus-in-expand-fwd {
+    0% {
+      letter-spacing: -0.5em;
+      transform: translateZ(-800px);
+      filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateZ(0);
+      filter: blur(0);
+      opacity: 1;
+    }
+  }
+
   @media screen and (min-width:768px) {
     padding-top: 12px;
     margin-bottom: 24px;
@@ -255,6 +300,10 @@ color: rgba(252, 252, 252, 1);
   color: rgba(252, 252, 252, 1);
   position: absolute;
   height: auto;
+
+
+  
+  
 
   @media screen and (min-width:768px)  {
     font-size: 11px;
