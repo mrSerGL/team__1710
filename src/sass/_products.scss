@@ -40,7 +40,8 @@
 .product-container {
   padding-top: 60px;
   padding-bottom: 46px;
-  
+  width: 320px;
+ 
 
   @media screen and (min-width: 768px) {
     width: 768px;
@@ -246,8 +247,8 @@
   .button {
     display: flex;
     background-color: transparent;
-    width: 40px;
-    height: 16px;
+    // width: 40px;
+    // height: 16px;
     align-items: center;
     margin-right: auto;
     margin-left: auto;
@@ -399,6 +400,7 @@
   border: 2px solid #f8d24e;
   border-radius: 10px;
   overflow: scroll;
+  
 
 // width: 95%;
 // max-width: 280px;
@@ -416,8 +418,8 @@
   }
 
   @media screen and (min-width: 768px) {
-    width: 568px;
-     height: 996px;
+    max-width: 568px;
+     max-height: 996px;
     padding: 32px 40px;
 
   }
@@ -705,29 +707,32 @@ margin-left: auto;
   background: #fcfcfc;
   border: 2px solid #f8d24e;
   border-radius: 10px;
+  overflow: scroll;
+  
 
-width: 95%;
-max-width: 280px;
- height: 95%;
-max-height: 480px;
-padding: 28px;
+// width: 95%;
+// max-width: 280px;
+//  height: 95%;
+// max-height: 968px;
+// padding: 28px;
 
   @media screen and (max-width: 767px) {
 
     width: 95%;
-    width: 280px;
-    // height: 95%;
-    // max-height: 968px;
+    max-width: 280px;
+     height: 95%;
+     max-height: 968px;
     padding: 28px;
   }
 
   @media screen and (min-width: 768px) {
     width: 568px;
-    // height: 996px;
+     height: 996px;
     padding: 32px 40px;
 
   }
 }
+
 .close-btn {
   position: absolute;
   right: 12px;
@@ -846,18 +851,20 @@ padding: 28px;
   background: #fcfcfc;
   border: 2px solid #f8d24e;
   border-radius: 10px;
+  overflow: scroll;
+  
 
   @media screen and (max-width: 767px) {
     width: 95%;
-    width: 280px;
-    // height: 95%;
-    // max-height: 968px;
+    max-width: 280px;
+     height: 95%;
+     max-height: 968px;
     padding: 28px;
   }
 
   @media screen and (min-width: 768px) {
     width: 568px;
-    // height: 996px;
+     height: 996px;
     padding: 32px 40px;
 
   }
