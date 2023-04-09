@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(document).jquery(function() {
     $('.slider').slick({
         arrows: false,
         dots:true
